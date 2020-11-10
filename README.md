@@ -1,32 +1,37 @@
-# inshorts-api-golang-mongodb
+**Inshorts-api-golang-mongodb**
 
 api developed with golang and mongodb server
 
-only with default golang packages 
+only with default golang packages
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-  
-without gorilla or mux
+    "go.mongodb.org/mongo-driver/bson"
 
-only with mongo-driver
+    "go.mongodb.org/mongo-driver/bson/primitive"
 
-##########################################
+ 
 
-Pre req
+<span style="text-decoration:underline;">without gorilla or mux</span>
 
+**only with mongo-driver**
 
 you might have to install mongo-driver if its not already installed
+
 to install the same please look into - https://github.com/mongodb/mongo-go-driver
 
 #######
-**working**
 
-GET -  "/articles - show all articles
-GET - "/articles/<id> - show article with id
-POST - "/articles - Add to record to articles
-GET - "/articles/search?q=<search_Word> - to search articles with search word in it(in content, subtitle)
+**WORKING**
 
-unit testing will be uploaded soon.. 
+**GET -  "/articles - show all articles**
 
-any issues - contact me on instagram @outsploiter 
+**GET - "/articles/&lt;id> - show article with id**
+
+**POST - "/articles - Add to record to articles**
+
+While posting only give title, subtitle and content of the article. ID, Object_ID  and Time Stamp will be automatically generated.
+
+**GET - "/articles/search?q=&lt;search_Word> - to search articles with search word in it(in content, subtitle)**
+
+unit testing will be uploaded soon..
+
+any issues - contact me on instagram @outsploiter
